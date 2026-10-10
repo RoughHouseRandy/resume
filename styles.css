@@ -2,13 +2,14 @@
 :root {
     --primary-color:rgb(214, 228, 255);
     --secondary-color:seashell;
+    --default-fontsize:1.25rem;
 }
 
 
 body {
     background-color:var(--primary-color);
     font-family:"Space Mono", monospace, sans-serif;
-    font-size:1.25rem;
+    font-size:var(--default-fontsize);
     line-height:3rem;
 }
 
@@ -27,7 +28,7 @@ body {
 }
 #header img {
     border-radius:1rem;
-    width:80%;
+    width:280px;
 }
 #header-card {
     display:flex;
@@ -43,6 +44,7 @@ a {
     border-radius:.5rem;
     border:1rem;
     padding:.5rem;
+    width:8rem;
 }
 
 a:hover {
@@ -74,7 +76,15 @@ a:hover {
 
 @media (max-width:600px){
     #header {
-        width:70%;
+        width:75%;
         padding:3rem;
+    }
+
+    #header img{
+        width:100%
+    }
+
+    #main{
+        width:80%;
     }
 }
