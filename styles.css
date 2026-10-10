@@ -4,12 +4,16 @@
     --secondary-color:seashell;
     --default-fontsize:1.25rem;
     --default-sectionfont:2rem;
+    --default-jobfont:1.35rem;
 }
 
 h2 {
     font-size:var(--default-sectionfont);
 }
-
+h3 {
+    white-space:nowrap;
+    font-size:var(--default-jobfont)
+}
 body {
     background-color:var(--primary-color);
     font-family:"Space Mono", monospace, sans-serif;
@@ -78,6 +82,12 @@ a:hover, a:focus {
     justify-content:center;
 }
 
+@media (max-width:1180px) {
+     h3 {
+        white-space:wrap;
+        padding:7px;
+    }
+}
 
 @media (max-width:640px){
     #header {
@@ -96,4 +106,5 @@ a:hover, a:focus {
     h1{
         text-align:left;
     }
+   
 }
