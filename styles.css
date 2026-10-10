@@ -51,7 +51,7 @@ a {
     width:8rem;
 }
 
-a:hover {
+a:hover, a:focus {
     color:lightskyblue;
 }
 
