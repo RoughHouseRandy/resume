@@ -9,6 +9,7 @@ body {
     background-color:var(--primary-color);
     font-family:"Space Mono", monospace, sans-serif;
     font-size:1.25rem;
+    line-height:3rem;
 }
 
 #header {
