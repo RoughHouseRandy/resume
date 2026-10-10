@@ -3,8 +3,12 @@
     --primary-color:rgb(214, 228, 255);
     --secondary-color:seashell;
     --default-fontsize:1.25rem;
+    --default-sectionfont:2rem;
 }
 
+h2 {
+    font-size:var(--default-sectionfont);
+}
 
 body {
     background-color:var(--primary-color);
@@ -74,7 +78,8 @@ a:hover {
     justify-content:center;
 }
 
-@media (max-width:600px){
+
+@media (max-width:640px){
     #header {
         width:75%;
         padding:3rem;
@@ -86,5 +91,9 @@ a:hover {
 
     #main{
         width:80%;
+    }
+    
+    h1{
+        text-align:left;
     }
 }
